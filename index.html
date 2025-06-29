@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selamat Datang!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffd6e0, #ffeaf5);
+      font-family: 'Segoe UI', sans-serif;
+      color: #d63384;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: fadeInDown 2s ease;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      animation: fadeIn 2.5s ease;
+    }
+
+    button {
+      padding: 12px 28px;
+      font-size: 1.2rem;
+      border-radius: 25px;
+      border: none;
+      background-color: #ff66b2;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      animation: fadeIn 3s ease;
+    }
+
+    button:hover {
+      background-color: #e60073;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      p { font-size: 1.1rem; }
+      button { font-size: 1rem; padding: 10px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎈 Halo Kamu yang Spesial! 🎈</h1>
+  <p>Siapkan hatimu, karena ada sesuatu yang indah untukmu...</p>
+  <button onclick="masuk()">Masuk</button>
+
+  <script>
+    function masuk() {
+      window.location.href = "ucapan.html";
+    }
+  </script>
+</body>
+</html>
